@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+<style>
+    div#area{
+        font: normal 30pt arial;
+        background: green;
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align:center;
+    }
+</style>
+</head>
+<body>
+    <h1>disparando eventos om html</h1>
+
+    <div id="area" onclick="interagir()" onmouseenter="dentro()" onmouseout="fora()"> interaja</div>
+
+    <script>
+
+let ck= document.getElementById('area')
+
+function interagir(){
+ 
+    ck.innerHTML=('oi')
+    ck.style.background= 'red'
+}
+function dentro(){
+    ck.innerHTML=('muda')
+
+}
+function fora(){
+    ck.innerHTML=('fora')
+    ck.style.background= 'green'
+
+}
+    </script>
+    
+</body>
+</html>
